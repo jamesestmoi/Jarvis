@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0024299C1BFA7DCA00527A4F /* WindowService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0024299B1BFA7DCA00527A4F /* WindowService.m */; };
+		004C9ABF1BFA928C0063525B /* Commands.m in Sources */ = {isa = PBXBuildFile; fileRef = 004C9ABE1BFA928C0063525B /* Commands.m */; };
 		0073D86B1BF9763800B01499 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D86A1BF9763800B01499 /* AppDelegate.m */; };
 		0073D86E1BF9763800B01499 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D86D1BF9763800B01499 /* main.m */; };
 		0073D8701BF9763800B01499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0073D86F1BF9763800B01499 /* Assets.xcassets */; };
@@ -15,6 +17,7 @@
 		0073D8891BF9763800B01499 /* JarvisUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D8881BF9763800B01499 /* JarvisUITests.m */; };
 		0073D8981BF9764400B01499 /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D8961BF9764400B01499 /* OverlayWindow.m */; };
 		0073D89B1BFA2C8B00B01499 /* NSImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D89A1BFA2C8B00B01499 /* NSImage+ResizeImage.m */; };
+		0073D89E1BFA782F00B01499 /* CommandService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D89D1BFA782F00B01499 /* CommandService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0024299A1BFA7DCA00527A4F /* WindowService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowService.h; sourceTree = "<group>"; };
+		0024299B1BFA7DCA00527A4F /* WindowService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowService.m; sourceTree = "<group>"; };
+		0024299D1BFA7EB700527A4F /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		004C9ABD1BFA928C0063525B /* Commands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commands.h; sourceTree = "<group>"; };
+		004C9ABE1BFA928C0063525B /* Commands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commands.m; sourceTree = "<group>"; };
 		0073D8661BF9763800B01499 /* Jarvis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jarvis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0073D8691BF9763800B01499 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0073D86A1BF9763800B01499 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +60,8 @@
 		0073D8971BF9764400B01499 /* OverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayWindow.h; sourceTree = "<group>"; };
 		0073D8991BFA2C8B00B01499 /* NSImage+ResizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ResizeImage.h"; sourceTree = "<group>"; };
 		0073D89A1BFA2C8B00B01499 /* NSImage+ResizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ResizeImage.m"; sourceTree = "<group>"; };
+		0073D89C1BFA782F00B01499 /* CommandService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandService.h; sourceTree = "<group>"; };
+		0073D89D1BFA782F00B01499 /* CommandService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,13 @@
 			children = (
 				0073D8691BF9763800B01499 /* AppDelegate.h */,
 				0073D86A1BF9763800B01499 /* AppDelegate.m */,
+				0073D89C1BFA782F00B01499 /* CommandService.h */,
+				0073D89D1BFA782F00B01499 /* CommandService.m */,
+				004C9ABD1BFA928C0063525B /* Commands.h */,
+				004C9ABE1BFA928C0063525B /* Commands.m */,
+				0024299A1BFA7DCA00527A4F /* WindowService.h */,
+				0024299B1BFA7DCA00527A4F /* WindowService.m */,
+				0024299D1BFA7EB700527A4F /* Singleton.h */,
 				0073D8971BF9764400B01499 /* OverlayWindow.h */,
 				0073D8961BF9764400B01499 /* OverlayWindow.m */,
 				0073D8991BFA2C8B00B01499 /* NSImage+ResizeImage.h */,
@@ -272,6 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0073D89B1BFA2C8B00B01499 /* NSImage+ResizeImage.m in Sources */,
+				0024299C1BFA7DCA00527A4F /* WindowService.m in Sources */,
+				004C9ABF1BFA928C0063525B /* Commands.m in Sources */,
+				0073D89E1BFA782F00B01499 /* CommandService.m in Sources */,
 				0073D86E1BF9763800B01499 /* main.m in Sources */,
 				0073D86B1BF9763800B01499 /* AppDelegate.m in Sources */,
 				0073D8981BF9764400B01499 /* OverlayWindow.m in Sources */,
@@ -495,6 +515,7 @@
 				0073D88F1BF9763800B01499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0073D8901BF9763800B01499 /* Build configuration list for PBXNativeTarget "JarvisTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +524,7 @@
 				0073D8921BF9763800B01499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0073D8931BF9763800B01499 /* Build configuration list for PBXNativeTarget "JarvisUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +533,7 @@
 				0073D8951BF9763800B01499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

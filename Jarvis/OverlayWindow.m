@@ -27,8 +27,9 @@
         //[self setBackgroundColor:[NSColor colorWithCalibratedRed:0 green:0 blue:0 alpha:1]];
         
         self.styleMask = NSBorderlessWindowMask;
+        self.alphaValue = 0;
         
-        [self animateBlur];
+        [self drawBackground];
     }
     return self;
 }
@@ -41,7 +42,7 @@
     return YES;
 }
 
-- (void)animateBlur {
+- (void)drawBackground {
     
     NSURL *desktopImageURL = [[NSWorkspace sharedWorkspace] desktopImageURLForScreen:[NSScreen mainScreen]];
     NSImage *desktopImage = [[[NSImage alloc] initWithContentsOfURL:desktopImageURL] resize:self.frame.size];
@@ -57,9 +58,9 @@
     [blurredView setWantsLayer:YES];
     
     blurredView.material = NSVisualEffectMaterialDark;
-    blurredView.blendingMode = NSVisualEffectBlendingModeWithinWindow;
+    blurredView.blendingMode = NSVisualEffectBlendingModeBehindWindow;
     
-    //[self.contentView addSubview:blurredView];
+    [self.contentView addSubview:blurredView];
     [self.contentView setWantsLayer:YES];
 }
 
