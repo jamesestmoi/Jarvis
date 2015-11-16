@@ -10,4 +10,7 @@
 
 @interface OverlayWindow : NSWindow
 
+- (void)fadeIn;
+- (void)fadeOut;
+
 @end

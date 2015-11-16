@@ -14,6 +14,7 @@
 		0073D87E1BF9763800B01499 /* JarvisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D87D1BF9763800B01499 /* JarvisTests.m */; };
 		0073D8891BF9763800B01499 /* JarvisUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D8881BF9763800B01499 /* JarvisUITests.m */; };
 		0073D8981BF9764400B01499 /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D8961BF9764400B01499 /* OverlayWindow.m */; };
+		0073D89B1BFA2C8B00B01499 /* NSImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D89A1BFA2C8B00B01499 /* NSImage+ResizeImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		0073D88A1BF9763800B01499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0073D8961BF9764400B01499 /* OverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayWindow.m; sourceTree = "<group>"; };
 		0073D8971BF9764400B01499 /* OverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayWindow.h; sourceTree = "<group>"; };
+		0073D8991BFA2C8B00B01499 /* NSImage+ResizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ResizeImage.h"; sourceTree = "<group>"; };
+		0073D89A1BFA2C8B00B01499 /* NSImage+ResizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ResizeImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				0073D86A1BF9763800B01499 /* AppDelegate.m */,
 				0073D8971BF9764400B01499 /* OverlayWindow.h */,
 				0073D8961BF9764400B01499 /* OverlayWindow.m */,
+				0073D8991BFA2C8B00B01499 /* NSImage+ResizeImage.h */,
+				0073D89A1BFA2C8B00B01499 /* NSImage+ResizeImage.m */,
 				0073D86F1BF9763800B01499 /* Assets.xcassets */,
 				0073D8711BF9763800B01499 /* MainMenu.xib */,
 				0073D8741BF9763800B01499 /* Info.plist */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0073D89B1BFA2C8B00B01499 /* NSImage+ResizeImage.m in Sources */,
 				0073D86E1BF9763800B01499 /* main.m in Sources */,
 				0073D86B1BF9763800B01499 /* AppDelegate.m in Sources */,
 				0073D8981BF9764400B01499 /* OverlayWindow.m in Sources */,

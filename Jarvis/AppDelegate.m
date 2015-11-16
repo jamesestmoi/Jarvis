@@ -9,14 +9,22 @@
 #import "AppDelegate.h"
 #import "OverlayWindow.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <NSSpeechRecognizerDelegate>
 
-@property (strong) NSWindow *window;
+@property (strong) OverlayWindow *window;
+@property (strong, nonatomic) NSStatusItem *statusItem;
+@property (strong, nonatomic) NSSpeechRecognizer *speechRecognizer;
+
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    _statusItem.image = [NSImage imageNamed:@"Jarvis"];
+    [_statusItem.image setTemplate:YES];
+    _statusItem.highlightMode = NO;
     
     self.window = [[OverlayWindow alloc] init];
     
@@ -24,10 +32,27 @@
     
     [self.window makeKeyAndOrderFront:self];
     
-    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-        context.duration = 0.5f;
-        self.window.animator.alphaValue = 1;
-    } completionHandler:nil];
+    self.speechRecognizer = [[NSSpeechRecognizer alloc] init];
+    
+    [self.speechRecognizer setCommands:@[@"Hey Jarvis"]];
+    [self.speechRecognizer startListening];
+    [self.speechRecognizer setDelegate:self];
+    [self.speechRecognizer setListensInForegroundOnly:NO];
+}
+
+- (void)applicationDidResignActive:(NSNotification *)notification {
+    
+    [self.window fadeOut];
+}
+
+- (void)applicationWillBecomeActive:(NSNotification *)notification {
+    
+    //[self.window fadeIn];
+}
+
+- (void)speechRecognizer:(NSSpeechRecognizer *)sender didRecognizeCommand:(NSString *)command {
+    
+    [self.window fadeIn];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
