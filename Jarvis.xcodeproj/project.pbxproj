@@ -89,6 +89,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004C9AC01BFA935B0063525B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0073D89C1BFA782F00B01499 /* CommandService.h */,
+				0073D89D1BFA782F00B01499 /* CommandService.m */,
+				0024299A1BFA7DCA00527A4F /* WindowService.h */,
+				0024299B1BFA7DCA00527A4F /* WindowService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		004C9AC11BFA936D0063525B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				004C9ABD1BFA928C0063525B /* Commands.h */,
+				004C9ABE1BFA928C0063525B /* Commands.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		004C9AC21BFA93770063525B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0024299D1BFA7EB700527A4F /* Singleton.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		004C9AC31BFA937D0063525B /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				0073D8971BF9764400B01499 /* OverlayWindow.h */,
+				0073D8961BF9764400B01499 /* OverlayWindow.m */,
+			);
+			name = Windows;
+			sourceTree = "<group>";
+		};
+		004C9AC41BFA93830063525B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				004C9AC61BFA93B00063525B /* Categories */,
+				004C9AC51BFA938B0063525B /* Components */,
+				0073D8711BF9763800B01499 /* MainMenu.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		004C9AC51BFA938B0063525B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0073D86F1BF9763800B01499 /* Assets.xcassets */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		004C9AC61BFA93B00063525B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0073D8991BFA2C8B00B01499 /* NSImage+ResizeImage.h */,
+				0073D89A1BFA2C8B00B01499 /* NSImage+ResizeImage.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		0073D85D1BF9763800B01499 = {
 			isa = PBXGroup;
 			children = (
@@ -114,20 +178,11 @@
 			children = (
 				0073D8691BF9763800B01499 /* AppDelegate.h */,
 				0073D86A1BF9763800B01499 /* AppDelegate.m */,
-				0073D89C1BFA782F00B01499 /* CommandService.h */,
-				0073D89D1BFA782F00B01499 /* CommandService.m */,
-				004C9ABD1BFA928C0063525B /* Commands.h */,
-				004C9ABE1BFA928C0063525B /* Commands.m */,
-				0024299A1BFA7DCA00527A4F /* WindowService.h */,
-				0024299B1BFA7DCA00527A4F /* WindowService.m */,
-				0024299D1BFA7EB700527A4F /* Singleton.h */,
-				0073D8971BF9764400B01499 /* OverlayWindow.h */,
-				0073D8961BF9764400B01499 /* OverlayWindow.m */,
-				0073D8991BFA2C8B00B01499 /* NSImage+ResizeImage.h */,
-				0073D89A1BFA2C8B00B01499 /* NSImage+ResizeImage.m */,
-				0073D86F1BF9763800B01499 /* Assets.xcassets */,
-				0073D8711BF9763800B01499 /* MainMenu.xib */,
-				0073D8741BF9763800B01499 /* Info.plist */,
+				004C9AC01BFA935B0063525B /* Services */,
+				004C9AC11BFA936D0063525B /* Constants */,
+				004C9AC21BFA93770063525B /* Protocols */,
+				004C9AC31BFA937D0063525B /* Windows */,
+				004C9AC41BFA93830063525B /* Views */,
 				0073D86C1BF9763800B01499 /* Supporting Files */,
 			);
 			path = Jarvis;
@@ -136,6 +191,7 @@
 		0073D86C1BF9763800B01499 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0073D8741BF9763800B01499 /* Info.plist */,
 				0073D86D1BF9763800B01499 /* main.m */,
 			);
 			name = "Supporting Files";
