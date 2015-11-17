@@ -33,8 +33,17 @@
 - (void)startListening;
 
 /**
- *  Object to alert when a command is recognized and when other important events occur
+ *  Add a command delegate
+ *
+ *  @param delegate delegate to add
  */
-@property (strong, nonatomic) id<CommandServiceDelegate> delegate;
+- (void)addDelegate:(id<CommandServiceDelegate>)delegate;
+
+/**
+ *  Remove a command delegate
+ *
+ *  @param delegate delegate to remove
+ */
+- (void)removeDelegate:(id<CommandServiceDelegate>)delegate;
 
 @end

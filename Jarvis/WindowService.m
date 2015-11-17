@@ -7,12 +7,14 @@
 //
 
 #import "WindowService.h"
+#import "MainWindowController.h"
 #import "OverlayWindow.h"
 
 @interface WindowService ()
 
-@property (strong, nonatomic) OverlayWindow *mainWindow;
+@property (strong, nonatomic) MainWindowController *windowController;
 @property (strong, nonatomic) NSStatusItem *statusItem;
+@property (strong, nonatomic, readonly) OverlayWindow *window;
 
 @end
 
@@ -39,10 +41,21 @@
     return self;
 }
 
+- (OverlayWindow *)window {
+    
+    return self.windowController.window;
+}
+
 - (void)initializeViewsAndWindows {
     
-    self.mainWindow = [[OverlayWindow alloc] init];
-    self.mainWindow.alphaValue = 0;
+    [self makeStatusItem];
+    
+    OverlayWindow *window = [[OverlayWindow alloc] init];
+    
+    self.windowController = [[MainWindowController alloc] initWithWindow:window];
+}
+
+- (void)makeStatusItem {
     
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.image = [NSImage imageNamed:@"Jarvis"];
@@ -50,36 +63,26 @@
     self.statusItem.highlightMode = NO;
 }
 
-- (void)showMainWindow {
+/*- (void)showMainWindow {
     
-    [self.mainWindow makeKeyAndOrderFront:self];
+    [self.window makeKeyAndOrderFront:self];
     
-    NSDictionary *fadeAnimation = [NSDictionary dictionaryWithObjectsAndKeys: self.mainWindow, NSViewAnimationTargetKey,NSViewAnimationFadeInEffect, NSViewAnimationEffectKey, nil];
+    NSDictionary *fadeAnimation = [NSDictionary dictionaryWithObjectsAndKeys: self.window, NSViewAnimationTargetKey,NSViewAnimationFadeInEffect, NSViewAnimationEffectKey, nil];
     
     [self runFadeAnimation:fadeAnimation];
+    
+    [self.window makeKeyAndOrderFront:self];
 }
 
 - (void)hideMainWindow {
     
-    NSDictionary *fadeAnimation = [NSDictionary dictionaryWithObjectsAndKeys: self.mainWindow, NSViewAnimationTargetKey,NSViewAnimationFadeOutEffect,NSViewAnimationEffectKey, nil];
+    NSDictionary *fadeAnimation = [NSDictionary dictionaryWithObjectsAndKeys: self.window, NSViewAnimationTargetKey,NSViewAnimationFadeOutEffect,NSViewAnimationEffectKey, nil];
     
     [self runFadeAnimation:fadeAnimation];
 }
 
-- (void)runFadeAnimation:(NSDictionary *)fadeAnimation {
-    
-    NSArray *animations = [NSArray arrayWithObjects:fadeAnimation, nil];
-    NSViewAnimation *animation = [[NSViewAnimation alloc] initWithViewAnimations: animations];
-    
-    [animation setAnimationBlockingMode: NSAnimationBlocking];
-    [animation setAnimationCurve: NSAnimationLinear];
-    [animation setDuration: [self fadeDuration]];
-    [animation startAnimation];
-}
 
-- (NSTimeInterval)fadeDuration {
-    
-    return 0.1;
-}
+*/
+
 
 @end

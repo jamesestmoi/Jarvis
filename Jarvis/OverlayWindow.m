@@ -16,7 +16,7 @@
     self = [super init];
     if (self) {
         
-        NSRect windowFrame = NSMakeRect(0, 0, [[NSScreen mainScreen] frame].size.width, [[NSScreen mainScreen] frame].size.height + 100);
+        NSRect windowFrame = NSMakeRect(0, 0, [[NSScreen mainScreen] frame].size.width, [[NSScreen mainScreen] frame].size.height + 22);
         
         //NSRect windowFrame = NSMakeRect(0, 0, 400, 400);
         
@@ -58,41 +58,10 @@
     [blurredView setWantsLayer:YES];
     
     blurredView.material = NSVisualEffectMaterialDark;
-    blurredView.blendingMode = NSVisualEffectBlendingModeBehindWindow;
+    blurredView.blendingMode = NSVisualEffectBlendingModeWithinWindow;
     
     [self.contentView addSubview:blurredView];
     [self.contentView setWantsLayer:YES];
-}
-
-- (NSTimeInterval)fadeDuration {
-    
-    return 0.1;
-}
-
-- (void)fadeIn {
-    
-    NSDictionary *newFadeIn = [NSDictionary dictionaryWithObjectsAndKeys: self, NSViewAnimationTargetKey,NSViewAnimationFadeInEffect, NSViewAnimationEffectKey, nil];
-    
-    NSArray *animations = [NSArray arrayWithObjects:newFadeIn, nil];
-    NSViewAnimation *animation = [[NSViewAnimation alloc] initWithViewAnimations: animations];
-    
-    [animation setAnimationBlockingMode: NSAnimationBlocking];
-    [animation setAnimationCurve: NSAnimationLinear];
-    [animation setDuration: [self fadeDuration]];
-    [animation startAnimation];
-}
-
-- (void)fadeOut {
-    
-    NSDictionary *oldFadeOut = [NSDictionary dictionaryWithObjectsAndKeys: self, NSViewAnimationTargetKey,NSViewAnimationFadeOutEffect,NSViewAnimationEffectKey, nil];
-    
-    NSArray *animations = [NSArray arrayWithObjects: oldFadeOut, nil];
-    NSViewAnimation *animation = [[NSViewAnimation alloc] initWithViewAnimations: animations];
-    
-    [animation setAnimationBlockingMode: NSAnimationBlocking];
-    [animation setAnimationCurve: NSAnimationLinear];
-    [animation setDuration: [self fadeDuration]];
-    [animation startAnimation];
 }
 
 @end

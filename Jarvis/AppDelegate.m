@@ -9,9 +9,11 @@
 #import "AppDelegate.h"
 #import "OverlayWindow.h"
 #import "CommandService.h"
-#import "WindowService.h"
+#import "MainWindowController.h"
 
 @interface AppDelegate () <CommandServiceDelegate>
+
+@property (strong, nonatomic) MainWindowController *windowController;
 
 @end
 
@@ -19,26 +21,30 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
-    [[WindowService sharedService] initializeViewsAndWindows];
+    OverlayWindow *window = [[OverlayWindow alloc] init];
     
-    [[CommandService sharedService] setDelegate:self];
+    self.windowController = [[MainWindowController alloc] initWithWindow:window];
+    
+    //[self.windowController showWindow];
+    
+    [[CommandService sharedService] addDelegate:self];
     [[CommandService sharedService] startListening];
 }
 
 - (void)applicationDidResignActive:(NSNotification *)notification {
     
-    [[WindowService sharedService] hideMainWindow];
+    [self.windowController hideWindow];
 }
 
 - (void)commandService:(CommandService *)service didRecognizeCommand:(NSString *)command {
     
     if (command == kShowJarvisCommand) {
         
-        [[WindowService sharedService] showMainWindow];
+        [self.windowController showWindow];
     }
     else if (command == kHideJarvisCommand) {
         
-        [[WindowService sharedService] hideMainWindow];
+        [self.windowController hideWindow];
     }
 }
 

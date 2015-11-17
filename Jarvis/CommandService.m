@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) NSSpeechRecognizer *speechRecognizer;
 
+@property (strong, nonatomic) NSMutableArray<id<CommandServiceDelegate>> *delegates;
+
 @end
 
 @implementation CommandService
@@ -32,6 +34,8 @@
 {
     self = [super init];
     if (self) {
+        
+        self.delegates = [[NSMutableArray alloc] init];
         
         self.speechRecognizer = [[NSSpeechRecognizer alloc] init];
         
@@ -54,7 +58,20 @@
 
 - (void)speechRecognizer:(NSSpeechRecognizer *)sender didRecognizeCommand:(NSString *)command {
     
-    [self.delegate commandService:self didRecognizeCommand:command];
+    for (id<CommandServiceDelegate> d in self.delegates) {
+        
+        [d commandService:self didRecognizeCommand:command];
+    }
+}
+
+- (void)addDelegate:(id<CommandServiceDelegate>)delegate {
+    
+    [self.delegates addObject:delegate];
+}
+
+- (void)removeDelegate:(id<CommandServiceDelegate>)delegate {
+    
+    [self.delegates removeObject:delegate];
 }
 
 @end

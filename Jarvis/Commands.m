@@ -9,4 +9,4 @@
 #import "Commands.h"
 
 NSString * const kShowJarvisCommand = @"Hey Jarvis";
-NSString * const kHideJarvisCommand = @"Close";
+NSString * const kHideJarvisCommand = @"Bye Jarvis";

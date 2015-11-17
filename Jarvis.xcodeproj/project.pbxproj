@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0024299C1BFA7DCA00527A4F /* WindowService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0024299B1BFA7DCA00527A4F /* WindowService.m */; };
 		004C9ABF1BFA928C0063525B /* Commands.m in Sources */ = {isa = PBXBuildFile; fileRef = 004C9ABE1BFA928C0063525B /* Commands.m */; };
+		004C9ACA1BFACEF70063525B /* JVAWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 004C9AC91BFACEF70063525B /* JVAWidget.m */; };
 		0073D86B1BF9763800B01499 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D86A1BF9763800B01499 /* AppDelegate.m */; };
 		0073D86E1BF9763800B01499 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D86D1BF9763800B01499 /* main.m */; };
 		0073D8701BF9763800B01499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0073D86F1BF9763800B01499 /* Assets.xcassets */; };
@@ -18,6 +19,13 @@
 		0073D8981BF9764400B01499 /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D8961BF9764400B01499 /* OverlayWindow.m */; };
 		0073D89B1BFA2C8B00B01499 /* NSImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D89A1BFA2C8B00B01499 /* NSImage+ResizeImage.m */; };
 		0073D89E1BFA782F00B01499 /* CommandService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073D89D1BFA782F00B01499 /* CommandService.m */; };
+		008227661BFB7005009109AF /* ClockWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 008227651BFB7005009109AF /* ClockWidget.m */; };
+		0082276A1BFB710A009109AF /* JVAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008227691BFB710A009109AF /* JVAViewController.m */; };
+		0082276D1BFB9214009109AF /* JVAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0082276C1BFB9214009109AF /* JVAView.m */; };
+		008227701BFBA160009109AF /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0082276F1BFBA160009109AF /* MainWindowController.m */; };
+		008227731BFBA3DB009109AF /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008227721BFBA3DB009109AF /* DashboardViewController.m */; };
+		008227761BFBA3E6009109AF /* DashboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008227751BFBA3E6009109AF /* DashboardView.m */; };
+		2396AECB99C9A4006F733935 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3651FC94B2856C909B7762C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,8 @@
 		0024299D1BFA7EB700527A4F /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		004C9ABD1BFA928C0063525B /* Commands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commands.h; sourceTree = "<group>"; };
 		004C9ABE1BFA928C0063525B /* Commands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commands.m; sourceTree = "<group>"; };
+		004C9AC81BFACEF70063525B /* JVAWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVAWidget.h; sourceTree = "<group>"; };
+		004C9AC91BFACEF70063525B /* JVAWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVAWidget.m; sourceTree = "<group>"; };
 		0073D8661BF9763800B01499 /* Jarvis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jarvis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0073D8691BF9763800B01499 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0073D86A1BF9763800B01499 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +72,21 @@
 		0073D89A1BFA2C8B00B01499 /* NSImage+ResizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ResizeImage.m"; sourceTree = "<group>"; };
 		0073D89C1BFA782F00B01499 /* CommandService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandService.h; sourceTree = "<group>"; };
 		0073D89D1BFA782F00B01499 /* CommandService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandService.m; sourceTree = "<group>"; };
+		008227641BFB7005009109AF /* ClockWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockWidget.h; sourceTree = "<group>"; };
+		008227651BFB7005009109AF /* ClockWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockWidget.m; sourceTree = "<group>"; };
+		008227681BFB710A009109AF /* JVAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVAViewController.h; sourceTree = "<group>"; };
+		008227691BFB710A009109AF /* JVAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVAViewController.m; sourceTree = "<group>"; };
+		0082276B1BFB9214009109AF /* JVAView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVAView.h; sourceTree = "<group>"; };
+		0082276C1BFB9214009109AF /* JVAView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVAView.m; sourceTree = "<group>"; };
+		0082276E1BFBA160009109AF /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		0082276F1BFBA160009109AF /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		008227711BFBA3DB009109AF /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		008227721BFBA3DB009109AF /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		008227741BFBA3E6009109AF /* DashboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardView.h; sourceTree = "<group>"; };
+		008227751BFBA3E6009109AF /* DashboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardView.m; sourceTree = "<group>"; };
+		8212E9D3D411C992B4392E70 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A3651FC94B2856C909B7762C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D327F7F1E2A7BF67AA9AA2EB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2396AECB99C9A4006F733935 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +179,15 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		004C9AC71BFAC8CF0063525B /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				008227631BFB6EB4009109AF /* Framework */,
+				008227671BFB700B009109AF /* Clock */,
+			);
+			name = Widget;
+			sourceTree = "<group>";
+		};
 		0073D85D1BF9763800B01499 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +195,8 @@
 				0073D87C1BF9763800B01499 /* JarvisTests */,
 				0073D8871BF9763800B01499 /* JarvisUITests */,
 				0073D8671BF9763800B01499 /* Products */,
+				EA626FA6138B62DD7C4A996B /* Pods */,
+				935EC91C43DF69B2BB3B87D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,11 +215,18 @@
 			children = (
 				0073D8691BF9763800B01499 /* AppDelegate.h */,
 				0073D86A1BF9763800B01499 /* AppDelegate.m */,
+				0082276E1BFBA160009109AF /* MainWindowController.h */,
+				0082276F1BFBA160009109AF /* MainWindowController.m */,
+				008227711BFBA3DB009109AF /* DashboardViewController.h */,
+				008227721BFBA3DB009109AF /* DashboardViewController.m */,
+				008227741BFBA3E6009109AF /* DashboardView.h */,
+				008227751BFBA3E6009109AF /* DashboardView.m */,
 				004C9AC01BFA935B0063525B /* Services */,
 				004C9AC11BFA936D0063525B /* Constants */,
 				004C9AC21BFA93770063525B /* Protocols */,
 				004C9AC31BFA937D0063525B /* Windows */,
 				004C9AC41BFA93830063525B /* Views */,
+				004C9AC71BFAC8CF0063525B /* Widget */,
 				0073D86C1BF9763800B01499 /* Supporting Files */,
 			);
 			path = Jarvis;
@@ -215,6 +259,45 @@
 			path = JarvisUITests;
 			sourceTree = "<group>";
 		};
+		008227631BFB6EB4009109AF /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				004C9AC81BFACEF70063525B /* JVAWidget.h */,
+				004C9AC91BFACEF70063525B /* JVAWidget.m */,
+				008227681BFB710A009109AF /* JVAViewController.h */,
+				008227691BFB710A009109AF /* JVAViewController.m */,
+				0082276B1BFB9214009109AF /* JVAView.h */,
+				0082276C1BFB9214009109AF /* JVAView.m */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		008227671BFB700B009109AF /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				008227641BFB7005009109AF /* ClockWidget.h */,
+				008227651BFB7005009109AF /* ClockWidget.m */,
+			);
+			name = Clock;
+			sourceTree = "<group>";
+		};
+		935EC91C43DF69B2BB3B87D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3651FC94B2856C909B7762C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA626FA6138B62DD7C4A996B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8212E9D3D411C992B4392E70 /* Pods.debug.xcconfig */,
+				D327F7F1E2A7BF67AA9AA2EB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,9 +305,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0073D88D1BF9763800B01499 /* Build configuration list for PBXNativeTarget "Jarvis" */;
 			buildPhases = (
+				1628C8B19325B9C1BF69F1D5 /* Check Pods Manifest.lock */,
 				0073D8621BF9763800B01499 /* Sources */,
 				0073D8631BF9763800B01499 /* Frameworks */,
 				0073D8641BF9763800B01499 /* Resources */,
+				A79EE086060953D6E62857BD /* Embed Pods Frameworks */,
+				BDA65E5CCFE1EF4F31E62EFA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,6 +425,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1628C8B19325B9C1BF69F1D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A79EE086060953D6E62857BD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDA65E5CCFE1EF4F31E62EFA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0073D8621BF9763800B01499 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -347,9 +481,16 @@
 				0073D89B1BFA2C8B00B01499 /* NSImage+ResizeImage.m in Sources */,
 				0024299C1BFA7DCA00527A4F /* WindowService.m in Sources */,
 				004C9ABF1BFA928C0063525B /* Commands.m in Sources */,
+				008227761BFBA3E6009109AF /* DashboardView.m in Sources */,
 				0073D89E1BFA782F00B01499 /* CommandService.m in Sources */,
 				0073D86E1BF9763800B01499 /* main.m in Sources */,
 				0073D86B1BF9763800B01499 /* AppDelegate.m in Sources */,
+				008227731BFBA3DB009109AF /* DashboardViewController.m in Sources */,
+				008227701BFBA160009109AF /* MainWindowController.m in Sources */,
+				008227661BFB7005009109AF /* ClockWidget.m in Sources */,
+				004C9ACA1BFACEF70063525B /* JVAWidget.m in Sources */,
+				0082276A1BFB710A009109AF /* JVAViewController.m in Sources */,
+				0082276D1BFB9214009109AF /* JVAView.m in Sources */,
 				0073D8981BF9764400B01499 /* OverlayWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +619,7 @@
 		};
 		0073D88E1BF9763800B01499 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8212E9D3D411C992B4392E70 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -490,6 +632,7 @@
 		};
 		0073D88F1BF9763800B01499 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D327F7F1E2A7BF67AA9AA2EB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
