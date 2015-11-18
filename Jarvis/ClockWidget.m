@@ -7,6 +7,7 @@
 //
 
 #import "ClockWidget.h"
+#import "ClockViewController.h"
 
 @implementation ClockWidget
 
@@ -24,10 +25,10 @@
 
 - (instancetype)init
 {
-    self = [super
-            init];
+    self = [super init];
     if (self) {
         
+        self.viewController = [[ClockViewController alloc] init];
     }
     return self;
 }

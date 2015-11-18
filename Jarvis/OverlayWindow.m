@@ -24,7 +24,7 @@
         [self setLevel:CGShieldingWindowLevel()];
         [self setMovableByWindowBackground:NO];
         [self setMovable:NO];
-        //[self setBackgroundColor:[NSColor colorWithCalibratedRed:0 green:0 blue:0 alpha:1]];
+        [self setBackgroundColor:[NSColor blackColor]];
         
         self.styleMask = NSBorderlessWindowMask;
         self.alphaValue = 0;
@@ -51,7 +51,7 @@
     desktopImageView.image = desktopImage;
     [desktopImageView setWantsLayer:YES];
     
-    [self.contentView addSubview:desktopImageView];
+    //[self.contentView addSubview:desktopImageView];
     
     NSVisualEffectView *blurredView = [[NSVisualEffectView alloc] initWithFrame:self.frame];
     
@@ -60,7 +60,7 @@
     blurredView.material = NSVisualEffectMaterialDark;
     blurredView.blendingMode = NSVisualEffectBlendingModeWithinWindow;
     
-    [self.contentView addSubview:blurredView];
+    //[self.contentView addSubview:blurredView];
     [self.contentView setWantsLayer:YES];
 }
 

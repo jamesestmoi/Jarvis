@@ -7,6 +7,7 @@
 //
 
 #import "JVAView.h"
+#import "Theme.h"
 
 @implementation JVAView
 
@@ -16,7 +17,9 @@
     if (self) {
         
         [self setWantsLayer:YES];
-        self.layer.backgroundColor = [NSColor colorWithCalibratedRed:1 green:1 blue:1 alpha:0.2].CGColor;
+        //self.layer.backgroundColor = [NSColor colorWithCalibratedRed:1 green:1 blue:1 alpha:0.2].CGColor;
+        self.layer.borderColor = [Theme foregroundColor].CGColor;
+        self.layer.borderWidth = 2;
     }
     return self;
 }

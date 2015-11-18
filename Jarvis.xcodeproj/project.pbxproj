@@ -25,6 +25,10 @@
 		008227701BFBA160009109AF /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0082276F1BFBA160009109AF /* MainWindowController.m */; };
 		008227731BFBA3DB009109AF /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008227721BFBA3DB009109AF /* DashboardViewController.m */; };
 		008227761BFBA3E6009109AF /* DashboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008227751BFBA3E6009109AF /* DashboardView.m */; };
+		008227791BFBE196009109AF /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008227781BFBE196009109AF /* ClockViewController.m */; };
+		0082277C1BFBE1A3009109AF /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0082277B1BFBE1A3009109AF /* ClockView.m */; };
+		0082277F1BFC078E009109AF /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0082277E1BFC078E009109AF /* Theme.m */; };
+		008227821BFC16E4009109AF /* TicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008227811BFC16E4009109AF /* TicView.m */; };
 		2396AECB99C9A4006F733935 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3651FC94B2856C909B7762C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +88,14 @@
 		008227721BFBA3DB009109AF /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		008227741BFBA3E6009109AF /* DashboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardView.h; sourceTree = "<group>"; };
 		008227751BFBA3E6009109AF /* DashboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardView.m; sourceTree = "<group>"; };
+		008227771BFBE196009109AF /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		008227781BFBE196009109AF /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
+		0082277A1BFBE1A3009109AF /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		0082277B1BFBE1A3009109AF /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
+		0082277D1BFC078E009109AF /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		0082277E1BFC078E009109AF /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		008227801BFC16E4009109AF /* TicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicView.h; sourceTree = "<group>"; };
+		008227811BFC16E4009109AF /* TicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicView.m; sourceTree = "<group>"; };
 		8212E9D3D411C992B4392E70 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A3651FC94B2856C909B7762C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D327F7F1E2A7BF67AA9AA2EB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				0073D86F1BF9763800B01499 /* Assets.xcassets */,
+				0082277D1BFC078E009109AF /* Theme.h */,
+				0082277E1BFC078E009109AF /* Theme.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -277,6 +291,12 @@
 			children = (
 				008227641BFB7005009109AF /* ClockWidget.h */,
 				008227651BFB7005009109AF /* ClockWidget.m */,
+				008227771BFBE196009109AF /* ClockViewController.h */,
+				008227781BFBE196009109AF /* ClockViewController.m */,
+				0082277A1BFBE1A3009109AF /* ClockView.h */,
+				0082277B1BFBE1A3009109AF /* ClockView.m */,
+				008227801BFC16E4009109AF /* TicView.h */,
+				008227811BFC16E4009109AF /* TicView.m */,
 			);
 			name = Clock;
 			sourceTree = "<group>";
@@ -487,9 +507,13 @@
 				0073D86B1BF9763800B01499 /* AppDelegate.m in Sources */,
 				008227731BFBA3DB009109AF /* DashboardViewController.m in Sources */,
 				008227701BFBA160009109AF /* MainWindowController.m in Sources */,
+				0082277F1BFC078E009109AF /* Theme.m in Sources */,
 				008227661BFB7005009109AF /* ClockWidget.m in Sources */,
 				004C9ACA1BFACEF70063525B /* JVAWidget.m in Sources */,
 				0082276A1BFB710A009109AF /* JVAViewController.m in Sources */,
+				008227791BFBE196009109AF /* ClockViewController.m in Sources */,
+				0082277C1BFBE1A3009109AF /* ClockView.m in Sources */,
+				008227821BFC16E4009109AF /* TicView.m in Sources */,
 				0082276D1BFB9214009109AF /* JVAView.m in Sources */,
 				0073D8981BF9764400B01499 /* OverlayWindow.m in Sources */,
 			);
